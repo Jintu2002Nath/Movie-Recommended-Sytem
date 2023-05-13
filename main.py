@@ -3,8 +3,14 @@ import pickle
 import requests
 # from patsy import dmatrices
 
-movies=pickle.load(open('movies_list.pkl','rb'))
-similarity=pickle.load(open('similarity_list.pkl','rb'))
+with open('movies_list.pkl', 'rb') as f:
+movies = pickle.load(f)
+
+with open('similarity_list.pkl', 'rb') as g:
+similarity = pickle.load(g)
+
+# movies=pickle.load(open('movies_list.pkl','rb'))
+# similarity=pickle.load(open('similarity_list.pkl','rb'))
 
 current_movie_id=0
 def fetch_poster(movie_id):
