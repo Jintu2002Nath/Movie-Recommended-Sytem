@@ -1,16 +1,23 @@
 from flask import Flask,request,render_template
 import pickle
 import requests
+import pandas
 # from patsy import dmatrices
 
-with open('movies_list.pkl', 'rb') as f:
-    movies = pickle.load(f)
+# with open('movies_list.pkl', 'rb') as f:
+#     movies = pickle.load(f)
 
-with open('similarity_list.pkl', 'rb') as g:
-    similarity = pickle.load(g)
+# with open('similarity_list.pkl', 'rb') as g:
+#     similarity = pickle.load(g)
 
 # movies=pickle.load(open('movies_list.pkl','rb'))
 # similarity=pickle.load(open('similarity_list.pkl','rb'))
+
+movies=pandas.read_pickle( 'model/movies_list.pkl', compression='infer', storage_options=None)
+
+similarity=pandas.read_pickle( 'model/similarity_list.pk', compression='infer', storage_options=None)
+
+
 
 current_movie_id=0
 def fetch_poster(movie_id):
