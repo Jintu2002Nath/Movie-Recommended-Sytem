@@ -13,9 +13,9 @@ import pandas
 # movies=pickle.load(open('movies_list.pkl','rb'))
 # similarity=pickle.load(open('similarity_list.pkl','rb'))
 
-movies=pandas.read_pickle( 'model/movies_list.pkl', compression='infer', storage_options=None)
+movies=pandas.read_pickle( 'movies_list.pkl', compression='infer', storage_options=None)
 
-similarity=pandas.read_pickle( 'model/similarity_list.pk', compression='infer', storage_options=None)
+similarity=pandas.read_pickle( 'similarity_list.pk', compression='infer', storage_options=None)
 
 
 
