@@ -4,10 +4,10 @@ import requests
 # from patsy import dmatrices
 
 with open('movies_list.pkl', 'rb') as f:
-movies = pickle.load(f)
+    movies = pickle.load(f)
 
 with open('similarity_list.pkl', 'rb') as g:
-similarity = pickle.load(g)
+    similarity = pickle.load(g)
 
 # movies=pickle.load(open('movies_list.pkl','rb'))
 # similarity=pickle.load(open('similarity_list.pkl','rb'))
