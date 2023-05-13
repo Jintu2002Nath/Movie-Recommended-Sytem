@@ -15,6 +15,6 @@ pytz
 requests
 six
 tzdata
-urllib
+urllib3
 Werkzeug
 gunicorn
