@@ -1,7 +1,7 @@
 from flask import Flask,request,render_template
 import pickle
 import requests
-import pandas
+import pandas as pd
 # from patsy import dmatrices
 
 # with open('movies_list.pkl', 'rb') as f:
