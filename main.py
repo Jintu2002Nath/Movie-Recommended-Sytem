@@ -4,11 +4,11 @@ import requests
 import pandas as pd
 # from patsy import dmatrices
 
-# with open('movies_list.pkl', 'rb') as f:
-#     movies = pickle.load(f)
+with open('movies_list.pkl', 'rb') as f:
+    movies = pickle.load(f)
 
-# with open('similarity_list.pkl', 'rb') as g:
-#     similarity = pickle.load(g)
+with open('similarity_list.pkl', 'rb') as g:
+    similarity = pickle.load(g)
 
 # movies=pickle.load(open('movies_list.pkl','rb'))
 # similarity=pickle.load(open('similarity_list.pkl','rb'))
@@ -19,8 +19,8 @@ import pandas as pd
 
 
 
-movies = pd.read_table('movies_list1.tsv', sep='\t')
-similarity = pd.read_table('similarity_list1.tsv', sep='\t')
+# movies = pd.read_table('movies_list1.tsv', sep='\t')
+# similarity = pd.read_table('similarity_list1.tsv', sep='\t')
 
 
 
